@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shafi.databaseimport.CityList">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:id="@+id/cityListRel"
+            android:background="@drawable/state_list_top_banner">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dhaka"
+                android:id="@+id/cityListStateName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="#212121"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bangladesh"
+                android:id="@+id/cityListCountryName"
+                android:layout_below="@id/cityListStateName"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:layout_marginTop="5dp" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:text="80 Cities"
+                android:id="@+id/cityListCityCunt"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/cityListCountryName"
+                android:layout_marginTop="15dp" />
+
+        </RelativeLayout>
+        
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cityListRel"
+            android:dividerHeight="2dp"
+            android:divider="#212121"
+            android:id="@+id/cityListList"></ListView>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

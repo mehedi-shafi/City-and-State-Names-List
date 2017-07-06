@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shafi.databaseimport.StateListActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-169dp">
+
+        <RelativeLayout
+            android:id="@+id/stateTitleBanner"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/state_list_top_banner">
+
+            <TextView
+                android:id="@+id/stateCountryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="Bangladesh"
+                android:textColor="#1A237E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/stateNoStates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stateCountryName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="No. of states:"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/stateCountryPhoneCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stateNoStates"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="880"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/stateList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#26C6DA"
+            android:dividerHeight="2dp"
+            android:layout_below="@id/stateTitleBanner"></ListView>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/row_background"
+    android:padding="12dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/listCountryNo"
+        android:textSize="15sp"
+        android:text="01"
+        android:textStyle="normal"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listCountryName"
+        android:layout_toRightOf="@id/listCountryNo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="25sp"
+        android:text="Bangladesh"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(BD)"
+        android:id="@+id/countryShortName"
+        android:layout_toRightOf="@id/listCountryName"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#004D40"
+        android:text="+880"
+        android:id="@+id/countryPhoneCode"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="50dp"
+        android:layout_below="@id/countryShortName"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
