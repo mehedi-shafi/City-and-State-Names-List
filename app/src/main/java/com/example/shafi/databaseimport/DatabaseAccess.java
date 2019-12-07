@@ -98,6 +98,26 @@ public class DatabaseAccess {
         return cities;
     }
 
+    public ArrayList<Country> searchCountry(String query){
+        ArrayList<Country> searchResult = new ArrayList<>();
+
+        query = "%" + query + "%";
+
+        Cursor cursor = database.rawQuery("SELECT * FROM countries WHERE name LIKE '" + query + "' COLLATE NOCASE", null);
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()){
+            Country country = new Country();
+            country.setPhoneCode(cursor.getInt(cursor.getColumnIndex("phonecode")));
+            country.setId(cursor.getInt(cursor.getColumnIndex("id")));
+            country.setName(cursor.getString(cursor.getColumnIndex("name")));
+            country.setShortName(cursor.getString(cursor.getColumnIndex("shortname")));
+
+            searchResult.add(country);
+            cursor.moveToNext();
+        }
+        return searchResult;
+    }
+
 
     public int getStateCount (int country_id){
         int numState = 0;

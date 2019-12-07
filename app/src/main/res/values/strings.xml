@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">State Country CIty List</string>
+    <string name="search_hint">Search for a country</string>
+    <string name="search_string">Search</string>
 </resources>

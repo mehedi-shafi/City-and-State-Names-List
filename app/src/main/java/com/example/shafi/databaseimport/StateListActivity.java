@@ -1,15 +1,14 @@
 package com.example.shafi.databaseimport;
-
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.shafi.databaseimport.data.StateListAdapter;
 import com.example.shafi.databaseimport.model.Country;
 import com.example.shafi.databaseimport.model.State;
 
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
