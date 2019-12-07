@@ -1,16 +1,14 @@
 package com.example.shafi.databaseimport;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.shafi.databaseimport.data.CountryListAdapter;
 import com.example.shafi.databaseimport.model.Country;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 

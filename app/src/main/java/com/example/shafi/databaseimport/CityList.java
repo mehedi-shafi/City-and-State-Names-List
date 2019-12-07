@@ -1,17 +1,14 @@
 package com.example.shafi.databaseimport;
 
-import android.database.Cursor;
-import android.provider.ContactsContract;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.shafi.databaseimport.data.CityListAdapter;
 import com.example.shafi.databaseimport.model.City;
 import com.example.shafi.databaseimport.model.State;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 

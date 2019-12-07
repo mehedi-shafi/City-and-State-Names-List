@@ -3,20 +3,19 @@ package com.example.shafi.databaseimport.data;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import com.example.shafi.databaseimport.CityList;
 import com.example.shafi.databaseimport.R;
-import com.example.shafi.databaseimport.model.Country;
 import com.example.shafi.databaseimport.model.State;
 
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
